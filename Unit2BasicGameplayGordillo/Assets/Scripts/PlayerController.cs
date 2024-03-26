@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float verticalInput;
     public float speed = 10.0f;
     public float xRange = 12;
-    public float zRange = 1;
+    public float zRange = 10;
 
     public GameObject projectilePrefab;
 
@@ -32,9 +32,9 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
 
-        if (transform.position.z < 0)
+        if (transform.position.z < 0.0f)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0.0f);
         }
 
         if (transform.position.z > zRange)

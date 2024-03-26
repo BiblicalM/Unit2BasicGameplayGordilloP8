@@ -601,8 +601,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalInput: 0
+  verticalInput: 0
   speed: 20
-  xRange: 10
+  xRange: 12
+  zRange: 10
   projectilePrefab: {fileID: 2478166312586113556, guid: ae64ddd2df98ab2438ca0febc6ddea8c, type: 3}
 --- !u!1 &919231410 stripped
 GameObject:
